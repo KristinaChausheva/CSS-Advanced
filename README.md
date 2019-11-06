@@ -1,2 +1,2 @@
 # CSS-Advanced
-Project from the Software University Bulgaria. Online Education.
+Project and Homeworks. Software University Bulgaria. Online Education.
