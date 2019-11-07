@@ -17,5 +17,5 @@ Problems for in-class lab for the [CSS Advanced](https://softuni.bg/trainings/24
 	* Add the files in the local repo and commit it.
 
 * Create a text file and save the link to the Github repository. 
-* Upload the file [here](https://softuni.bg/trainings/2427/css-advanced-july-2019#lesson-12420).
+* Upload the file [here](https://softuni.bg/trainings/2543/css-advanced-november-2019#lesson-13329).
 
