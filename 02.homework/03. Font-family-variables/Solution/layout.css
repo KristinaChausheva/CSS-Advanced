@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    display: flex;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 60em;
+    margin: auto;
+    
+}
+
+article {
+    width: 51em;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var( --font-headings);
+    margin: 1em 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header p, header h1 {
+    text-align: center;
+}
+
