@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: var(--prime-color);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 80vh;
+}
+
+section {
+    margin: 3em;
+    border: solid 1px var(--yellow-color);
+    border-radius: 0.3em;
+    width: 60em;
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li:first-child {
+    margin: 1em 0 2em 2em;
+}
+
+li:nth-child(2) {
+    margin: 1em 4em;
+}
+
+li:last-child {
+    margin: 1em 2em 2em 0;
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+button {
+    color: var(--white-color);
+    background-color: var(--yellow-color);
+    border: none;
+    border-radius: 0.3em;
+    display: block;
+    height: 35px;
+    width: 85px;
+    margin: 2em 0 0 0;
+    font-weight: bolder;
+}
+
+button:hover {
+    color: var(--yellow-color);
+    background-color: var(--prime-color);
+}
