@@ -1,0 +1,25 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    padding: 2em;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0.5em 0;
+}
+
+ul {
+    margin: 0.5em 0 0.5em 3em;
+
+}
+
+p {
+    margin: 1.5em 0;
+}
+
+footer {
+    margin: 0.5em 0;
+}
