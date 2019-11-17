@@ -21,9 +21,7 @@ ul li {
   animation-duration: 3s;
   animation-name: show;
   animation-iteration-count: infinite;
-  animation-play-state: running;
- 
-  /*transition: opacity 0.3s ease-in, transform 0.3s ease-in;*/
+  animation-play-state: running;*/
   
   transform: translate(-5em, 0);
   opacity: 0;
