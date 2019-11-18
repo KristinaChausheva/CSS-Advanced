@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    margin: 3.2em;
+    outline: 5px darkblue solid;
+    transform: scale(2);
+    text-decoration: none;
+}
+
+a:hover {
+    outline: 6px darkblue solid;
+    transition: 0.2s ease-out;
+}
