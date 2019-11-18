@@ -1,33 +1,59 @@
-body, div {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+:root {
+    --wall-color: #eeeeee;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-div::before,
-div::after {
-    
+body {
+    background-color: var(--wall-color);
+}
+
+div {
     position: absolute;
-    background: linear-gradient(180deg,rgba(105,98,219,1) 0%, rgba(159,159,194,1) 35%, rgba(243,247,247,1) 100%);
-    content: "";
-    border: orange;
-    border: solid 2px black;
+    margin: auto;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div {
+    width: 800px;
+    height: 400px;
 }
 
 div::before {
-    opacity: 0.2;
+    z-index: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: opacity 0.5s linear;
+    background: linear-gradient(180deg,rgba(105,98,219,1) 0%, rgba(159,159,194,1) 35%, rgba(243,247,247,1) 100%);
+}
+div:hover::before {
+    opacity: 1;
 }
 
 div::after {
-    opacity: 0.8;
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: opacity 0.5s linear;
+    background: linear-gradient(180deg, rgba(250,148,13,1) 0%, rgba(247,234,194,1) 93%, rgba(249,237,176,1) 100%);
 }
-
-
-div:hover{
-    background-color: orange;
-    transition: 0.1s;
+div:hover::after {
+    opacity: 1;
 }
