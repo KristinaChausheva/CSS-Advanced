@@ -1,0 +1,30 @@
+:root {
+    --box-size: 5em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    background: red;
+    animation: slide 5s ease-out infinite forwards;
+}
+
+@keyframes slide {
+    0% {
+
+    }
+    25% {
+        transform: translate(calc(100vw - var(--box-size)), 0);
+    }
+    50% {
+        transform: translate( calc(100vw - var(--box-size)), calc(100vh - var(--box-size)));
+    }
+    75% {
+        transform: translate( 0, calc(100vh - var(--box-size)));
+    }
+}
