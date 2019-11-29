@@ -1,0 +1,16 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+
+.container div {
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+/*# sourceMappingURL=style.css.map */
