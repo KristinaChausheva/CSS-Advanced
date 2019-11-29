@@ -1,0 +1,44 @@
+body {
+  margin: 1em;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  color: white;
+}
+
+.container * {
+  background: black;
+  padding: 1em;
+}
+
+.container header {
+  grid-area: head;
+}
+
+.container main {
+  grid-area: main;
+}
+
+.container aside {
+  grid-area: aside;
+}
+
+.container footer {
+  grid-area: footer;
+}
+
+@media (min-width: 1024px) {
+  .container {
+        grid-template-areas: "head head head" "main main aside" "footer footer footer";
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+        grid-template-areas: "head head head" "main main main" "aside aside aside" "footer footer footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */

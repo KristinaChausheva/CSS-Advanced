@@ -1,0 +1,60 @@
+body {
+    margin: 1em;
+     
+}
+
+.container {
+    display: grid;
+    
+    
+    grid-gap: 1em;
+
+
+    color: white;
+
+    
+
+    * {
+        background:rgba($color: #000000, $alpha: 1);
+        padding: 1em;
+    }
+
+    header {
+        grid-area: head;
+        
+    }
+
+    main {
+        grid-area: main;
+        
+    }
+
+    aside {
+        grid-area: aside;
+       
+    }
+
+    footer {
+        grid-area: footer;
+        
+    } 
+}
+@media (min-width: 1024px) {
+    .container {
+       
+        grid-template-areas: "head head head"
+                         "main main aside"
+                         "footer footer footer";
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        //background: yellow;
+        grid-template-areas: "head head head"
+                            "main main main"
+                            "aside aside aside"
+                            "footer footer footer";
+    }
+
+}
