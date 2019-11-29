@@ -1,0 +1,44 @@
+body {
+  margin: 1em;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "head head head" "main main aside" "footer footer footer";
+  grid-gap: 1em;
+  color: white;
+}
+
+.container * {
+  background: black;
+  padding: 1em;
+}
+
+.container header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: head;
+}
+
+.container main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.container aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aside;
+}
+
+.container footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+/*# sourceMappingURL=style.css.map */
