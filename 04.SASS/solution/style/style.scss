@@ -1,0 +1,16 @@
+@import "./_variables";
+@import "./_header";
+@import "./responsive";
+
+.contact {
+    @include flex-center(); 
+    background-color: $primary-btn;
+    button {
+        background-color: $secondary-color;
+    }
+    @include bp(phone) {
+        background-color: $text-color;
+    }
+    
+}
+

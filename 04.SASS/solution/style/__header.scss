@@ -1,0 +1,27 @@
+@import "./responsive";
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    @include flex-center();
+    background: $secondary-color;
+    height: 80vh;
+    button {
+        background-color: $primary-btn;
+       
+        &:hover {
+            background-color: green;
+        }
+        &::after {
+            content: " => after element";
+        }
+        @include bp(phone) {
+            background-color: $text-color;
+        }
+    }
+}

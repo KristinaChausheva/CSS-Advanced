@@ -1,0 +1,55 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: blueviolet;
+  height: 80vh;
+}
+
+header button {
+  background-color: yellow;
+}
+
+header button:hover {
+  background-color: green;
+}
+
+header button::after {
+  content: " => after element";
+}
+
+@media (max-width: 600px) {
+  header button {
+    background-color: pink;
+  }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellow;
+}
+
+.contact button {
+  background-color: blueviolet;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    background-color: pink;
+  }
+}
+/*# sourceMappingURL=style.css.map */
